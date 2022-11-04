@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <!-- load elements normally -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- bootstrap framework -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="popUp"></div>
+  <!-- start navbar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg py-3">
+      <a href="#" class="nav-brand "><img src="assets/images/logo.svg" alt="logo"></a>
+      <button type="button" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nvb">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-4 active"> <a href="#" class="nav-link"> Home </a> </li>
+          <li class="nav-item ms-4"> <a href="#" class="nav-link"> New </a> </li>
+          <li class="nav-item ms-4"> <a href="#" class="nav-link"> Popular </a> </li>
+          <li class="nav-item ms-4"> <a href="#" class="nav-link"> Trending </a> </li>
+          <li class="nav-item ms-4"> <a href="#" class="nav-link"> Categories </a> </li>
+        </ul>
+      </div>
+  </div>
+  </nav>
+  <!-- end navbar -->
+  <!-- start side bar -->
+  <aside id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul class="navbar-nav">
+      <li class="nav-item me-4 active"> <a href="#" class="nav-link"> Home </a> </li>
+      <li class="nav-item me-4"> <a href="#" class="nav-link"> New </a> </li>
+      <li class="nav-item me-4"> <a href="#" class="nav-link"> Popular </a> </li>
+      <li class="nav-item me-4"> <a href="#" class="nav-link"> Trending </a> </li>
+      <li class="nav-item me-4"> <a href="#" class="nav-link"> Categories </a> </li>
+    </ul>
+  </aside>
+  <!-- end side bar -->
+  <main class="container-fluid mt-2">
+    <div class="row">
+      <!-- start img sec -->
+      <div class="col-lg-8">
+        <picture>
+          <source media="(min-width:576px)" srcset="assets/images/image-web-3-desktop.jpg">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="lego cubes" class="img-fluid">
+        </picture>
+        <div class="row mt-3">
+          <div class="col-lg">
+            <h1 class="title">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="col-lg-7">
+            <p class="parag">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the
+              people.
+              But is it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- end img sec -->
+      <!-- start New column section -->
+      <div class="col-lg mt-5 mt-lg-0">
+        <aside class=" px-3 py-4 new-col">
+          <h3 class="new-title mb-4">New</h3>
+          <p>
+            <span class="mb-2">Hydrogen VS Electric Cars</span>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+          <hr>
+          <p>
+            <span class="mb-2">The Downsides of AI Artistry</span>
+            What are the possible adverse effects of on-demand AI image generation?
+
+          </p>
+          <hr>
+          <p>
+            <span class="mb-2">Is VC Funding Drying Up?</span>
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </aside>
+      </div>
+      <!-- end New colum section -->
+    </div>
+    <!-- start cards section -->
+    <div class="row mt-5">
+      <div class="col-lg">
+        <div class="my-card d-flex flex-row">
+          <img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
+          <div class="body">
+            <h4>01</h4>
+            <h6 class="card-title">Reviving Retro PCs</h6>
+            <p class="card-text">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="my-card d-flex flex-row mt-3 mt-lg-0">
+          <img src="assets/images/image-top-laptops.jpg" alt="image-retro-pcs">
+          <div class="body">
+            <h4>02</h4>
+            <h6 class="card-title">Top 10 Laptops of 2022</h6>
+            <p class="card-text">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mt-3 mt-lg-0">
+        <div class="my-card d-flex flex-row">
+          <img src="assets/images/image-gaming-growth.jpg" alt="image-retro-pcs">
+          <div class="body">
+            <h4>03</h4>
+            <h6 class="card-title">The Growth of Gaming</h6>
+            <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end cards section -->
+  </main>
+  <!-- start attribution section -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/m-mohammad25/" target="_blank">M. Mohammad</a>.
+  </div>
+  <!-- end attribution section -->
+</body>
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("popUp").style.display = "block";
+    document.getElementById("popUp").style.backgroundColor = "rgba(0,0,0,0.5)";
+
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("popUp").style.display = "none";
+    document.getElementById("popUp").style.backgroundColor = "transparent";
+  }
+</script>
+
+</html>
