@@ -44,10 +44,10 @@ body {
 nav ul>li>a {
     color: var(--Dark-grayish-blue) !important;
     font-weight: 400 !important;
-    transition: var(--popUp-trans-duration);
-    -o-transition: var(--popUp-trans-duration);
-    -moz-transition: var(--popUp-trans-duration);
-    -webkit-transition: var(--popUp-trans-duration);
+    transition: var(--btn-trasn-duration) !important;
+    -o-transition: var(--btn-trasn-duration) !important;
+    -moz-transition: var(--btn-trasn-duration) !important;
+    -webkit-transition: var(--btn-trasn-duration) !important;
 }
 
 nav ul>li>a:active {
